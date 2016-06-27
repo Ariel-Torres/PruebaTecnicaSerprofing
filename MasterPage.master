@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register src="UserControl/Menu.ascx" tagname="Menu" tagprefix="uc3" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link rel="stylesheet" href="<%=DBManager.SiteURL %>css/mycss.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/css/bootstrap3/bootstrap-switch.min.css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="<%=DBManager.SiteURL %>css/breadcrumb.css" />
+    <link rel="stylesheet" href="<%=DBManager.SiteURL %>css/bootstrap-datetimepicker.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js"></script>
+    <script src="<%=DBManager.SiteURL %>js/bootstrap-datetimepicker.js"></script>
+    
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+ <body style="background-color:#B7B9B7">
+      <div>
+            <uc3:menu ID="menu" runat="server" />
+    </div>
+    <div>
+        <div style="padding:5px;font-weight:bold">
+            <asp:ContentPlaceHolder id="ContentPlaceHolderTitle" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+     <div class="row" id="footerLogo" style="text-align:center;">
+        Prueba Tecnica: Oscar Ariel Torres
+    </div>
+</body>
+</html>   
