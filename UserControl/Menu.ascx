@@ -18,9 +18,9 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="../Default.aspx">Oficinas</a></li>
+            <li><a href="<%=DBManager.SiteURL %>Default.aspx">Oficinas</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="../Empleados.aspx">Empleados</a></li>
+            <li><a href="<%=DBManager.SiteURL %>Empleados.aspx">Empleados</a></li>
           </ul>
         </li>
       </ul>
